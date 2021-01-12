@@ -1,0 +1,30 @@
+#listTable {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+#listTable td {
+  padding: 0.5em 0.3333em;
+}
+
+#listTable td,
+#listTable tr {
+  border: 1px solid black;
+}
+
+#listTable .center {
+  text-align: center;
+}
+
+#listTable .checkmark input[type="checkbox"] {
+  margin: 0;
+}
+
+#listTable .title input {
+  width: 85%;
+}
+
+#listTable .checked {
+  color: #666;
+  text-decoration: line-through;
+}

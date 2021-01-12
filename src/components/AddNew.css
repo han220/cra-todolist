@@ -1,0 +1,14 @@
+#addnew {
+  /* border: 1px red solid; */
+}
+
+#addnew input {
+  min-width: 300px;
+  width: 80%;
+}
+
+#addnew button,
+#addnew input {
+  height: 1.5em;
+  margin: 0.3vh;
+}
