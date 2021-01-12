@@ -5,7 +5,7 @@ function TodoItem({ todo }) {
   const [editMode, setEditMode] = useState(false);
   const [title, setTitle] = useState(todo.title);
 
-  useEffect(() => !editMode && setTitle(todo.title), [todo.title]);
+  useEffect(() => !editMode && setTitle(todo.title), [todo.title, editMode]);
 
   const saveData = () => {
     // Update Title

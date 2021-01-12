@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { firebaseApp } from "../configs/firebaseApp";
 import TodoItem from "./TodoItem";
@@ -17,7 +17,7 @@ function ListTodos() {
   // }, []);
   // console.log(todos);
 
-  const [value, loading, error] = useCollection(
+  const [value, loading] = useCollection(
     firebaseApp
       .firestore()
       .collection("todos")
